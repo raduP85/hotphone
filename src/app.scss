@@ -1,0 +1,10 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import 'variables';
+@import 'header';
+@import 'content';
+@import 'footer';
+
+body {
+  background-color: $primary;
+}
