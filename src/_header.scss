@@ -1,0 +1,150 @@
+// top bar styling
+.top-header{
+  display: flex;
+  height: 100px;
+  align-items: center;
+
+  @media (max-width: $xl) {
+    img{
+      height: 60px;
+    }
+  }
+  @media (max-width: $lg) {
+    height: 80px;
+    img{
+      height: 50px;
+    }
+  }
+  @media (max-width: $md) {
+    height: 70px;
+    img{
+      height: 40px;
+    }
+  }
+  @media (max-width: $sm) {
+    display: none;
+  }
+}
+
+.top-header-contact{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  .delivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border: 1px dashed $primary;
+    border-radius: 10px;
+    background-color: $primary-light;
+    padding: 10px;
+    .icon{
+      font-size: 27px;
+      color: $darkGray;
+      margin-right: 10px;
+    }
+    .delivery-text{
+      text-align: center;
+      font-size: 14px;
+      @media (max-width: $lg) {
+        font-size: 9px;      
+      }
+    }
+  }
+  .header-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    background-color: $primary-light;
+    height:64px;
+    @media (max-width: $lg) {
+      height:62.5px;
+    }
+    
+    a{ 
+      color: $darkGray;
+      text-decoration: none;
+      padding:0 20px 0 20px;
+      font-size: 16px;
+      font-weight: bold;      
+      @media (max-width: $lg) {
+        font-size: 14px;
+        padding:0 15px 0 15px;
+      }
+    }
+    i.phone{
+      color: $darkGray;
+      font-size: 19px;
+    }
+  }
+}
+
+
+// navigation styling
+#main-nav{
+  background-color: $primary;
+  border-bottom: 3px solid $primary-light;
+
+  #main-menu{
+    li{
+      a{
+        font-size: 16px;
+        color: $white;
+        &:hover{
+          color: $secondary;
+        }
+      }
+      &.active {
+        a{
+          color: $secondary;
+        }
+      }
+    }
+    @media (max-width: $lg) {      
+      li{
+        a{
+
+          font-size: 12px;
+        }
+      }
+    }
+    
+  }
+
+  .dropdown-item{
+    color: $darkGray !important;
+  }
+  .mobile-menu-dropdown{
+    display: flex;
+    justify-content: center;
+    button{
+      color: $white;
+      border: none;
+      border-radius: 0;
+      &:hover{
+        border: none;
+      }
+    }
+  }
+
+}
+
+.dropdown-menu {
+  border: none;
+  margin-top: 8px;
+  border-radius: 0;
+  background-color: $primary-light;
+  li{
+    a{
+      color: $darkGray;
+      &:hover{
+        background-color: $primary-light;
+        color: $primary;
+      }
+    }
+  }
+}
